@@ -54,7 +54,7 @@ Los campos desconocidos (p. ej. `slug`) se ignoran. Los textos se recortan antes
 Apoyo: `POST /api/users` → 201 y `POST /api/users/login` → 200 (ambos devuelven `{"user":{username,email,bio,image,token}}`); `GET /api/articles/{slug}` → 200 / 404.
 
 ## 4. Flujo de la reimplementación
-![diagrama](assets\diagrama.png)
+![diagrama](assets/diagrama.png)
 
 Diferencia respecto al diagrama de reconocimiento: aquí la autenticación y la validación son pasos explícitos previos al servicio, y las etiquetas se persisten en la misma transacción.
 
